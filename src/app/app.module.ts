@@ -17,4 +17,5 @@ import { CategoryListComponent } from './pages/categories/category-list/category
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
