@@ -10,7 +10,7 @@ import { Entry } from "./entry.model";
     providedIn: 'root'
 })
 
-export class CategoryService {
+export class EntryService {
 
     apiPath: string = "api/entries";
 
