@@ -61,6 +61,10 @@ export class EntryService {
 
     private jsonDataToEntries(jsonData: any[]): Entry[] {
         const entries: Entry[] = [];
+
+        console.log(jsonData[0] as Entry);//Não tranforma o json em objeto do tipo Entry. Cast não funciona legal.
+        console.log( Object.assign(new Entry(), jsonData[0]));
+        
         //jsonData.forEach(element => entries.push(element as Entry));
 
         jsonData.forEach(element => {
